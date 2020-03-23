@@ -109,6 +109,7 @@ export default () => (
             secondarySlot={<SvgCharts />}
         />
         <SplitSection
+            id="collaborate"
             reverseOrder
             primarySlot={
                 <div className="lg:pl-32 xl:pl-48">
@@ -168,9 +169,7 @@ export default () => (
             </div>
         </section>
         <section className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
-            <h3 className="text-5xl font-semibold">
-                Ready ?
-            </h3>
+            <h3 className="text-5xl font-semibold">Ready ?</h3>
             <p className="mt-8 text-xl font-light">
                 Quis lectus nulla at volutpat diam ut. Enim lobortis scelerisque
                 fermentum dui faucibus in.
