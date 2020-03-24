@@ -43,7 +43,7 @@ npm run build
 ### Run the production server
 
 ```
-nom run serve
+npm run serve
 ```
 
 ## Key libraries
