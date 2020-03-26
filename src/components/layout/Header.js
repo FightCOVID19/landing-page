@@ -1,7 +1,8 @@
 import React from "react"
 import AnchorLink from "react-anchor-link-smooth-scroll"
+import { FormattedMessage, Link } from "gatsby-plugin-intl"
+
 import { Button, Logo } from "../commons"
-import { Link } from "gatsby"
 
 const Header = () => (
     <header className="sticky top-0 bg-white shadow">
@@ -10,24 +11,26 @@ const Header = () => (
                 <div className="w-12 mr-3">
                     <Logo />
                 </div>
-                Fight COVID-19
+                <FormattedMessage id={"NAME_APP"} />
             </Link>
             <div className="flex mt-4 sm:mt-0">
                 <AnchorLink className="px-4" href="#features">
-                    Principles
+                    <FormattedMessage id={"PRINCIPLES"} />
                 </AnchorLink>
                 <Link className="px-4" to="/blog">
-                    Blog
+                    <FormattedMessage id={"BLOG"} />
                 </Link>
                 <AnchorLink className="px-4" href="#collaborate">
-                    Collaborate
+                    <FormattedMessage id={"COLLABORATE"} />
                 </AnchorLink>
                 <AnchorLink className="px-4" href="#testimonials">
-                    Testimonials
+                    <FormattedMessage id={"TESTIMONIALS"} />
                 </AnchorLink>
             </div>
             <div className="hidden md:block">
-                <Button className="text-sm">Use app</Button>
+                <Button className="text-sm">
+                    <FormattedMessage id={"USE_APP"} />
+                </Button>
             </div>
         </div>
     </header>
