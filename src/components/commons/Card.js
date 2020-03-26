@@ -5,10 +5,10 @@ const Card = ({ className, children }) => (
         className={`p-12 rounded-lg border border-solid border-gray-200 ${className}`}
         style={{
             boxShadow: "0 10px 28px rgba(0,0,0,.08)",
-            "min-height": "275px",
+            minHeight: "275px",
             display: 'flex',
-            'justify-content': 'center',
-            'flex-direction': 'column',
+            justifyContent: 'center',
+            flexDirection: 'column',
         }}
     >
         {children}
