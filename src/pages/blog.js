@@ -1,5 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import { FormattedMessage } from "gatsby-plugin-intl"
+
 
 import Layout from "../components/layout/Layout"
 import SEO from "../components/seo"
